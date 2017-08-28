@@ -15,7 +15,6 @@ app.get('/', function(request, response) {
 });
 
 app.get('/tictactoe', function(request, response) {
-  console.log("PATH: " + path.join(__dirname+'/tictactoe/build/index.html'));
   response.sendFile(path.join(__dirname+'/tictactoe/build/index.html'));
 });
 
